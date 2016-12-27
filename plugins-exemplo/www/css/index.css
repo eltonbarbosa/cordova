@@ -1,0 +1,83 @@
+/*Resets*/
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, fieldset, legend, label, table, header, footer, nav, section,figure { 
+	margin: 0; 
+	padding: 0;
+	border: 0
+}
+
+ul,ol,li{
+    list-style: none
+}
+
+a{
+    text-decoration: none
+} 
+
+/*o width dos elementos agora será a soma do conteúdo com a borda e o padding.*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+/*Clear fix, Importante para ajudar nos problemas com float
+https://css-tricks.com/snippets/css/clear-fix/
+*/
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/*Fim clearfix*/
+/*Fim reset*/
+
+/*Estilo geral*/
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.125em; /*18 / 16*/
+}
+
+header h1{
+    text-align: center
+}
+
+.form input{
+    padding: 0.55em
+}
+
+.form input,
+.form label,
+.form button{
+   margin: 0.75em
+}
+
+img{
+     max-width: 100%;
+}
+
+.content{
+    width: 100%
+}
+
+.form button{
+   float: left;
+}
+
+button{
+    display: none;
+    padding: 0.55em 1.11em 0.55em 1.11em;
+    text-transform: uppercase;
+    font-size: 0.55em;/*12 / 18*/
+    height: 4em
+}
+
+.group-btn button{
+    float: left;
+    width: 33%
+}
